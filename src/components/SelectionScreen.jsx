@@ -6,7 +6,7 @@ function SelectionScreen({ onSelectMagazine }) {
     // Container principal: fundo verde, ocupa a tela inteira, com padding no topo
     <div className="w-full h-full bg-[#00573D] pt-16 overflow-y-auto">
 
-      <header className="flex justify-center mb-8 px-4">
+      <header className="flex justify-center mb-1 px-4">
         <img
           src="src\assets\imagesUnimed\logo.png" //logo
           alt="Logo Unimed Santa Catarina"
@@ -14,7 +14,7 @@ function SelectionScreen({ onSelectMagazine }) {
         />
       </header>
       {/* Imagem "Homenagem" centralizada entre logo e cartões */}
-      <div className="flex justify-center mb-001 px-9">
+      <div className="flex justify-center mb-0 px-9">
         <img
           src="src\assets\imagesUnimed\Homenagem aos presidentes1.png" // Altere para o caminho da sua imagem
           alt="Imagem decorativa"
@@ -24,7 +24,7 @@ function SelectionScreen({ onSelectMagazine }) {
 
       <main className="px-5 pb-24">
         {/* Centraliza a lista de cartões */}
-        <div className="max-w-2xl mx-auto space-y-5">
+        <div className="max-w-2xl mx-auto space-y-3">
           {presidentsList.map((item) => (
             // O cartão: fiel ao protótipo, com layout flexível
             <div
