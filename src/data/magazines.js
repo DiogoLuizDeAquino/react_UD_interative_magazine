@@ -36,7 +36,7 @@ export const MAGAZINES_DATA = {
   'dr-ivan': {
     presidentName: 'Dr. Ivan Savoia Assef',
     management: 'Gestão 2010 - 2011 (In Memoriam)',
-    coverImage: 'https://placehold.co/200x200/EFEFEF/333?text=Dr.+Ivan',
+    coverImage: '/images/imagesDrIvan/Dr. Ivan Savoia Assef_image.jpeg',
     pages: [ // Array 'pages' adicionado
       'https://placehold.co/600x800/FFFFFF/333?text=Capa+Ivan',
       'https://placehold.co/600x800/FAFAFA/333?text=Página+1',

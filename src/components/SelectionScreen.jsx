@@ -14,7 +14,7 @@ function SelectionScreen({ onSelectMagazine }) {
         />
       </header>
       {/* Imagem "Homenagem" centralizada entre logo e cartões */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-001 px-9">
         <img
           src="src\assets\imagesUnimed\Homenagem aos presidentes1.png" // Altere para o caminho da sua imagem
           alt="Imagem decorativa"
