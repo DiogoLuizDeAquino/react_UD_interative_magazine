@@ -37,7 +37,7 @@ function MagazineScreen({ magazine, onClose }) {
 
     // Renderiza o flipbook da revista
     return (
-        <div className="fixed top-0 left-0 w-full h-full bg-black z-50 flex items-center justify-center">
+        <div className="select-none fixed top-0 left-0 w-full h-full bg-black z-50 flex items-center justify-center">
             {/* Só renderiza o flipbook se o tamanho da tela for maior que zero */}
             {size.width > 0 && (
                 <HTMLFlipBook
@@ -48,7 +48,7 @@ function MagazineScreen({ magazine, onClose }) {
                     showPageCorners={true}
                     showCover={true}
                     mobileScrollSupport={true}
-                    flippingTime={1000}
+                    flippingTime={500}
                     className="w-full h-full"
                 >
                     {/* Renderiza cada página da revista */}
@@ -59,7 +59,7 @@ function MagazineScreen({ magazine, onClose }) {
             )}
             {/* Dica sutil de interação */}
             {showHint && (
-                <div className="select-none absolute bottom-20  right-10 transform -translate-x-1/2
+                <div className="select-none absolute bottom-10  justify-center transform -translate-x-1/2
                                 bg-white/60 text-black px-4 py-4 rounded-2xl 
                                 flex items-center gap-2 text-smn animate-bounce">
                     <span>Arraste para folhar</span>

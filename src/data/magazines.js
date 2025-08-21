@@ -9,7 +9,6 @@ export const MAGAZINES_DATA = {
       '/images/imagesDrSergio/DrSergio0.png',
       '/images/imagesDrSergio/DrSergio1.png',
       '/images/imagesDrSergio/DrSergio2.png',
-      '/images/imagesDrAlberto/exemploBiografia.jpg',
       '/images/imagesDrSergio/dr-deska_image.jpeg',
     ],
   },
