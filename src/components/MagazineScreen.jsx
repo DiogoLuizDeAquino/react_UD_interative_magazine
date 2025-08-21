@@ -15,6 +15,7 @@ const Page = React.forwardRef((props, ref) => {
 function MagazineScreen({ magazine, onClose }) {
     // Estado para armazenar o tamanho da tela
     const [size, setSize] = useState({ width: 0, height: 0 });
+    const [showHint, setShowHint] = useState(true);
 
     // Fecha a revista se o usuário tocar com 3 dedos na tela (mobile)
     useEffect(() => {
@@ -42,7 +43,7 @@ function MagazineScreen({ magazine, onClose }) {
                 <HTMLFlipBook
                     width={size.width}
                     height={size.height}
-                    maxShadowOpacity={0}
+                    maxShadowOpacity={0.5}
                     drawShadow={false}
                     showPageCorners={true}
                     showCover={true}
@@ -56,7 +57,16 @@ function MagazineScreen({ magazine, onClose }) {
                     ))}
                 </HTMLFlipBook>
             )}
-            
+            {/* Dica sutil de interação */}
+            {showHint && (
+                <div className="select-none absolute bottom-20  right-10 transform -translate-x-1/2
+                                bg-white/60 text-black px-4 py-4 rounded-2xl 
+                                flex items-center gap-2 text-smn animate-bounce">
+                    <span>Arraste para folhar</span>
+                    <span className="text-lg">⬅️</span>
+                </div>
+            )}
+
         </div>
     );
 }

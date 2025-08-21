@@ -6,7 +6,7 @@ export const MAGAZINES_DATA = {
     coverImage: '/images/imagesDrSergio/Dr. Sérgio Malburg Filho_image.jpeg',
     pages: [
       '/images/imagesDrSergio/Dr. Sérgio Malburg Filho_image.jpeg',
-      '/images/imagesDrSergio/DrSergio0.jpg',
+      '/images/imagesDrSergio/DrSergio0.png',
       '/images/imagesDrSergio/DrSergio1.png',
       '/images/imagesDrSergio/DrSergio2.png',
       '/images/imagesDrAlberto/exemploBiografia.jpg',
