@@ -19,8 +19,8 @@ export const MAGAZINES_DATA = {
     pages: [
       '/images/imagesDrAlberto/Dr. Alberto Gugelmin Neto_image.jpeg',
       '/images/imagesDrAlberto/Dr.Alberto.jpg',
-      '/images/imagesDrAlberto/exemploBiografia.jpg',
-      'https://placehold.co/600x800/FAFAFA/333?text=Contracapa',
+      '/images/imagesDrAlberto/Dr.Alberto1.png',
+      '/images/imagesDrAlberto/Dr.Alberto2.png',
     ],
   },
   'dr-edevard': {

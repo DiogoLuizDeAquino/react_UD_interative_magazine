@@ -48,7 +48,7 @@ function MagazineScreen({ magazine, onClose }) {
                     showPageCorners={true}
                     showCover={true}
                     mobileScrollSupport={true}
-                    flippingTime={500}
+                    flippingTime={1000}
                     className="w-full h-full"
                 >
                     {/* Renderiza cada página da revista */}
@@ -62,7 +62,7 @@ function MagazineScreen({ magazine, onClose }) {
                 <div className="select-none absolute bottom-10  justify-center transform -translate-x-1/2
                                 bg-white/60 text-black px-4 py-4 rounded-2xl 
                                 flex items-center gap-2 text-smn animate-bounce">
-                    <span>Arraste para folhar</span>
+                    <span>Deslize para virar a página</span>
                     <span className="text-lg">⬅️</span>
                 </div>
             )}
