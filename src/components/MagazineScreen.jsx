@@ -56,6 +56,15 @@ function MagazineScreen({ magazine, onClose }) {
                     ))}
                 </HTMLFlipBook>
             )}
+            {/* Dica sutil de interação */}
+            {showHint && (
+                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 
+                                bg-white/60 text-black px-4 py-2 rounded-2xl 
+                                flex items-center gap-2 text-sm animate-bounce">
+                    <span>Arraste para o lado</span>
+                    <span className="text-lg">➡️</span>
+                </div>
+            )}
         </div>
     );
 }
