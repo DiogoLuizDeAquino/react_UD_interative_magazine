@@ -6,7 +6,7 @@ const Page = React.forwardRef((props, ref) => {
     return (
         // Cada página é um div branco com uma imagem de fundo
         <div className="bg-white" ref={ref}>
-            <img src={props.src} alt="" className="w-full h-full object-cover" />
+            <img src={props.src} alt="" className="select-none w-full h-full object-cover" />
         </div>
     );
 });
