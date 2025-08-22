@@ -62,12 +62,12 @@ function MagazineScreen({ magazine, onClose }) {
             {showHint && (
                 <div
                     className="fixed bottom-8 left-1/2 -translate-x-1/2 
-                                bg-white/25 backdrop-blur-md
+                                bg-white/10 backdrop-blur-midium
                                 px-8 py-3 rounded-full shadow-lg 
                                 flex items-center gap-0 select-none"
                 >
                     {/* Texto com a classe de sombra */}
-                    <span className="animate-pulse select-none font-bold text-white text-shadow-black text-lg">
+                    <span className="animate-pulse select-none font-semibold text-white text-shadow-black text-lg">
                         Deslize para folhar
                     </span>
 
