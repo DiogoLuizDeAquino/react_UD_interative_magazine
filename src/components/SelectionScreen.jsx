@@ -8,18 +8,50 @@ function SelectionScreen({ onSelectMagazine }) {
 
       <header className="flex justify-center mb-1 px-4">
         <img
-          src="src\assets\imagesUnimed\logo.png" //logo
+          src="src/assets/imagesUnimed/logo.png" //logo
           alt="Logo Unimed Santa Catarina"
           className="w-2/4 max-w-xs h-auto"
         />
       </header>
-      {/* Imagem "Homenagem" centralizada entre logo e cartões */}
-      <div className="flex justify-center mb-0 px-9">
-        <img
-          src="src\assets\imagesUnimed\Homenagem aos presidentes1.png" // Altere para o caminho da sua imagem
-          alt="Imagem decorativa"
-          className="w-2/5 h-auto object-contain"
-        />
+
+      {/* Texto "Homenagem aos presidentes" */}
+      <div className="select-none flex justify-center mb-4 px-9">
+        <div className="select-none text-center" style={{ lineHeight: 0.95 }}>
+          <div
+            style={{
+              fontFamily: '"Regular Brush", cursive',
+              fontSize: 'clamp(28px, 6vw, 88px)',
+              fontWeight: 'normal',
+              color: '#fff',
+              textShadow: '0 0 10px color: black',
+            }}
+          >
+            Homenagem
+          </div>
+          <div
+            style={{
+              fontFamily: '"Regular Brush", cursive',
+              fontSize: 'clamp(22px, 5vw, 64px)',
+              color: '#b2d14b',
+              marginTop: '0.25rem',
+              marginBottom: '0.25rem',
+              textShadow: '0 0 10px color: black',
+            }}
+          >
+            aos
+          </div>
+          <div
+            style={{
+              fontFamily: '"Regular Brush", cursive',
+              fontSize: 'clamp(28px, 6vw, 88px)',
+              fontWeight: 'normal',
+              color: '#fff',
+              textShadow: '0 0 10px color: black',
+            }}
+          >
+            presidentes
+          </div>
+        </div>
       </div>
 
       <main className="px-5 pb-24">
@@ -32,7 +64,7 @@ function SelectionScreen({ onSelectMagazine }) {
               onClick={() => onSelectMagazine(item.id)}
               className="bg-white rounded-2xl p-4 flex items-center space-x-4 cursor-pointer shadow-lg transition-transform hover:scale-[1.02]"
             >
-              {/* A imagem: redonda, com borda azul e responsiva */}
+              {/* A imagem: redonda, com borda verde e responsiva */}
               <img
                 src={item.coverImage}
                 alt={`Foto de ${item.presidentName}`}
