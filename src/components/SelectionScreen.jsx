@@ -54,33 +54,33 @@ function SelectionScreen({ onSelectMagazine }) {
         </div>
       </div>
 
-      <main className="px-5 pb-24">
+      <main className="select-none px-5 pb-24">
         {/* Centraliza a lista de cartões */}
-        <div className="max-w-2xl mx-auto space-y-3">
+        <div className="select-none max-w-2xl mx-auto space-y-3">
           {presidentsList.map((item) => (
-            // O cartão: fiel ao protótipo, com layout flexível
+            // cartão com layout flexível
             <div
               key={item.id}
               onClick={() => onSelectMagazine(item.id)}
-              className="bg-white rounded-2xl p-4 flex items-center space-x-4 cursor-pointer shadow-lg transition-transform hover:scale-[1.02]"
+              className="select-none bg-white rounded-2xl p-4 flex items-center space-x-4 cursor-pointer shadow-lg transition-transform hover:scale-[1.02]"
             >
-              {/* A imagem: redonda, com borda verde e responsiva */}
+              {/* imagem redonda, com borda verde e responsiva */}
               <img
                 src={item.coverImage}
                 alt={`Foto de ${item.presidentName}`}
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-green-400 object-cover flex-shrink-0"
+                className="select-none w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-green-400 object-cover flex-shrink-0"
               />
               {/* O container do texto */}
-              <div className="flex-1">
-                <h2 className="text-lg md:text-xl font-bold text-gray-800">{item.presidentName}</h2>
-                <p className="text-sm md:text-base text-gray-600">{item.management}</p>
+              <div className="select-none flex-1">
+                <h2 className="select-none text-lg md:text-xl font-bold text-gray-800">{item.presidentName}</h2>
+                <p className="select-none text-sm md:text-base text-gray-600">{item.management}</p>
               </div>
             </div>
           ))}
         </div>
       </main>
 
-      <footer className="fixed bottom-4 w-full text-center text-white text-opacity-60 text-xs">
+      <footer className="select-none fixed bottom-4 w-full text-center text-white text-opacity-60 text-xs">
         Desenvolvido por Diogo Luiz de Aquino
       </footer>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HTMLFlipBook from 'react-pageflip';
+import hintIcon from '../assets/imagesUnimed/gestoArrastarEmoj.png';
 
 // Componente de página individual para o flipbook
 const Page = React.forwardRef((props, ref) => {
@@ -59,11 +60,22 @@ function MagazineScreen({ magazine, onClose }) {
             )}
             {/* Dica sutil de interação */}
             {showHint && (
-                <div className="select-none absolute bottom-10  justify-center transform -translate-x-1/2
-                                bg-white/60 text-black px-4 py-4 rounded-2xl 
-                                flex items-center gap-2 text-smn animate-bounce">
-                    <span>Deslize para virar a página</span>
-                    <span className="text-lg">⬅️</span>
+                <div
+                    className="fixed bottom-8 left-1/2 -translate-x-1/2 
+                                bg-white/25 backdrop-blur-md
+                                px-8 py-3 rounded-full shadow-lg 
+                                flex items-center gap-0 select-none"
+                >
+                    {/* Texto com a classe de sombra */}
+                    <span className="animate-pulse select-none font-bold text-white text-shadow-black text-lg">
+                        Deslize para folhar
+                    </span>
+
+                    <img
+                        src={hintIcon}
+                        alt="Gesto de deslizar"
+                        className="select-none w-20 h-20 animate-page-hint"
+                    />
                 </div>
             )}
 
