@@ -10,6 +10,7 @@ export const MAGAZINES_DATA = {
       '/images/imagesDrSergio/DrSergio1.png',
       '/images/imagesDrSergio/DrSergio2.png',
       '/images/imagesDrSergio/dr-deska_image.jpeg',
+      './src/assets/imagesUnimed/FimCapa.png',
     ],
   },
   'dr-alberto': {
@@ -21,16 +22,19 @@ export const MAGAZINES_DATA = {
       '/images/imagesDrAlberto/Dr.Alberto.jpg',
       '/images/imagesDrAlberto/Dr.Alberto1.png',
       '/images/imagesDrAlberto/Dr.Alberto2.png',
+      './src/assets/imagesUnimed/FimCapa.png',
     ],
   },
   'dr-edevard': {
     presidentName: 'Dr. Edevard José de Araújo',
     management: 'Gestão 2011 - 2015',
-    // Caminho da imagem corrigido (usando /)
     coverImage: '/images/imagesDrEdevard/Dr. Edevard José de Araújo_image.jpeg',
     pages: [ // Array 'pages' adicionado
-      'https://placehold.co/600x800/FFFFFF/333?text=Capa+Edevard',
-      'https://placehold.co/600x800/FAFAFA/333?text=Página+1',
+      'images/imagesDrEdevard/Dr. Edevard José de Araújo_image.jpeg',
+      'images/imagesDrEdevard/DrEdevard0.jpg',
+      'images/imagesDrEdevard/DrEdevard1.png',
+      'images/imagesDrEdevard/DrEdevard2.png',
+      './src/assets/imagesUnimed/FimCapa.png',
     ],
   },
   'dr-ivan': {
