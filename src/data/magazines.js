@@ -10,6 +10,8 @@ export const MAGAZINES_DATA = {
       '/images/imagesDrSergio/DrSergio1.png',
       '/images/imagesDrSergio/DrSergio2.png',
       '/images/imagesDrSergio/dr-deska_image.jpeg',
+      'https://placehold.co/600x800/FAFAFA/333?text=Diretor+2',
+      'https://placehold.co/600x800/FAFAFA/333?text=Diretor+3',
       './src/assets/imagesUnimed/FimCapa.png',
     ],
   },

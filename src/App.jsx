@@ -9,7 +9,7 @@ function App() {
 
   const selectedMagazine = selectedMagazineId ? MAGAZINES_DATA[selectedMagazineId] : null;
 
-  // 4. FUNÇÃO PARA FORÇAR TELA CHEIA
+  // FUNÇÃO PARA FORÇAR TELA CHEIA
   const enterFullScreen = () => {
     const element = document.documentElement; // Pega o elemento raiz da página
     if (element.requestFullscreen) {
