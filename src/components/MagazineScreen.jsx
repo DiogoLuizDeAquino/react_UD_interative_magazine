@@ -93,8 +93,7 @@ function MagazineScreen({ magazine, onClose }) {
                     mobileScrollSupport={true}
                     flippingTime={1000}
                     className="w-full h-full"
-                    // A interação mais importante: virar a página também reinicia o temporizador
-                    onFlip={resetInactivityTimer}
+                    onFlip={resetInactivityTimer} //virar a página também reinicia o temporizador
                 >
                     {magazine.pages.map((pageSrc, index) => (
                         <Page key={index} src={pageSrc} />
