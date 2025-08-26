@@ -57,6 +57,23 @@ function MagazineScreen({ magazine, onClose }) {
         return () => window.removeEventListener('touchstart', handleMultiTouch);
     }, [onClose]);
 
+    // Previne o menu de contexto e o zoom por toque duplo
+    useEffect(() => {
+        const handleContextMenu = (e) => e.preventDefault();
+        const handleTouchStart = (e) => {
+            if (e.touches.length === 1) e.preventDefault();
+        };
+
+        window.addEventListener("contextmenu", handleContextMenu);
+        window.addEventListener("touchstart", handleTouchStart, { passive: false });
+
+        return () => {
+            window.removeEventListener("contextmenu", handleContextMenu);
+            window.removeEventListener("touchstart", handleTouchStart);
+        };
+
+    }, []);
+
     // Define o tamanho da tela e a dica
     useEffect(() => {
         setSize({ width: window.innerWidth, height: window.innerHeight });
